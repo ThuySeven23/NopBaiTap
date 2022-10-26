@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    var a = +prompt("Nhập chiều dài (a): ");
+    var b = +prompt("Nhập chiều rộng (b): ");
+
+    if(isNaN(a) == true && isNaN(b) == false)
+    {
+        alert("Nhập không đúng giá trị !!");
+    }
+    else if(isNaN(a) == false && isNaN(b) == true)
+    {
+        alert("Nhập không đúng giá trị !!");
+    }
+    else
+    {
+        let dientichHCN = a*b;
+        document.write("Diện tích HCN bằng : " + dientichHCN + " m2");
+    }
+</script>
+</html>

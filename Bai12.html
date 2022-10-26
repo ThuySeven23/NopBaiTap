@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var tienBd = +prompt("Nhap so tien ban dau: ");
+    var tienThang = +prompt("Nhap so tien thang :");
+    var tienLai;
+    if (tienBd < 0 || tienThang < 0)
+    {
+        alert("Nhap sai tien !!!");
+    }
+    else
+    {
+        if (tienThang > 10)
+        {
+            tienLai = tienBd * 10 /100;
+        }
+        else
+        {
+            if (tienThang > 6)
+            {
+                tienLai = tienBd * 5 / 100;
+            }
+            else
+            {
+                tienLai = tienBd * 0.5 /100;
+            }
+        }
+    }
+
+    let tientra = tienBd + tienLai;
+    alert("Tien tra : " + tientra);
+
+
+</script>
+</body>
+</html>

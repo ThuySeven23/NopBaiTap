@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    var thue = +prompt("Nhap thue thu nhap ca nhan minh:");
+    if (isNaN(thue) === true)
+    {
+        document.write("nhap sai gia tri!!");
+    }
+    else
+    {
+        if (thue < 10)
+        {
+            alert("thue la: " + thue * 10 / 100);
+        }
+        else
+        {
+            alert("thue la: " + thue * 15 / 100);
+        }
+    }
+</script>
+</html>

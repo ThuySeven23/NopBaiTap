@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    /* Cho tam giác ABC vuông tại B , có cạnh a = 10 cm . Tính dien tich tam giác ABC. */
+    var a = 10;
+    var b = +prompt("Nhập cạnh b vào : ");
+
+    if (isNaN(b) != true)
+    {
+        let S = 1/2 * a * b;
+        document.write("Dien tich tam giac ABC vuông tại B là: " + S +" cm");
+    }
+    else
+    {
+        document.write("Nhập sai giá trị !!");
+    }
+
+
+</script>
+</html>

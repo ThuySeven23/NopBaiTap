@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    // Cho pt : ax+b = 0
+
+    var a = +prompt("Nhập số a :");
+    var b = +prompt("Nhập số b :");
+
+    if (a == 0 && b == 0)
+    {
+        document.write("Phương trình vô số nghiệm");
+    }
+    else if (a != 0 && b == 0)
+    {
+        document.write("Phương trình có nghiệm bằng 0");
+    }
+    else if (a == 0 && b!= 0 )
+    {
+        document.write("Phương trình vô nghiệm")
+    }
+    else
+    {
+        document.write("Phương trình sẽ có nghiệm x = " + (-b/a) );
+    }
+
+</script>
+</html>

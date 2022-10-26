@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    // Tinh dien nang theo cong xuat : A= P*t
+    var p = +prompt("Nhap cong xuat (vd : 1000 kwh - (Nhap theo don vi kwh).) : ");
+    var t = +prompt("Nhap so thoi gian da su dung (vd : 1h -- Doi ra gio): ");
+    var a = p*t;
+    var tiendien = 11;
+    if(isNaN(p) == true && isNaN(t) == true)
+    {
+        document.write("Nhap sai gia tri");
+    }
+    else
+    {
+
+        document.write("Dien nang tieu thu thang nay: " + a + " (kwh) <br>");
+        document.write("Tien dien : " + tiendien * a  + " Dong");
+    }
+</script>
+</html>
