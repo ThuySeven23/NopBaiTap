@@ -2,25 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Chương trình thực hiện tính và hiển thị xem có bao nhiêu số nguyên lớn hơn hoặc bằng 10.</title>
 </head>
 <body>
 
 </body>
-
 <script>
-    var c = +prompt("Nhập °C vào: ");
-    var f = c * 9/5 + 32;
-
-    if (isNaN(c) == true)
-    {
-        document.write("Nhập sai giá trị !");
+    let arr = [];
+    for (let i = 0; i < 10 ; i++) {
+        arr[i] = +prompt("Nhap so vao: ");
     }
-    else
-    {
-        document.write("Giá trị biến đổi thành: " + f + "°F");
+    for (let j = 0; j < 10; j++) {
+        if (arr[j] >= 10)
+        {
+            document.write(arr[j] + " ");
+        }
     }
-
 </script>
-
 </html>

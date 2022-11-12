@@ -2,32 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Viết Chương trình tìm xem V có nằm trong mảng số nguyên hay không?</title>
 </head>
-<body>
-
-</body>
 <script>
-    // Cho pt : ax+b = 0
 
-    var a = +prompt("Nhập số a :");
-    var b = +prompt("Nhập số b :");
+    let arr = [];
+    for (let i = 0; i < 10; i++) {
+        arr[i] = +prompt("Nhap mang thu [" + i + "]");
+    }
 
-    if (a == 0 && b == 0)
-    {
-        document.write("Phương trình vô số nghiệm");
-    }
-    else if (a != 0 && b == 0)
-    {
-        document.write("Phương trình có nghiệm bằng 0");
-    }
-    else if (a == 0 && b!= 0 )
-    {
-        document.write("Phương trình vô nghiệm")
-    }
-    else
-    {
-        document.write("Phương trình sẽ có nghiệm x = " + (-b/a) );
+    let v = +prompt("Nhap so V : ");
+    let joke = 0;
+
+    for (let j = 0; j < 10 ; j++) {
+        if (v === arr[j])
+        {
+            document.write("V is in the array");
+            break;
+        }
+        else
+        {
+            joke++;
+        }
+        if (joke > 10 )
+        {
+            document.write("V is not in the array");
+            break;
+        }
     }
 
 </script>
