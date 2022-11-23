@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phát triển ứng dụng nhỏ mô phỏng câu chuyện Adam và Eva </title>
+</head>
+<body>
+
+</body>
+<script>
+
+    class Apple {
+        constructor(weigthA) {
+            this.weightA = weigthA;
+        }
+
+        decreaseWeightA() {
+            return this.weightA--;
+        }
+
+        getWeightA() {
+            return this.weightA;
+        }
+
+        isEmpty(){
+            if (this.weightA > 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    }
+
+
+    class Human {
+        constructor(name, gender, weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+        }
+
+        setName(name) {
+            this.name = name;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        setGender(gender) {
+            this.gender = gender;
+        }
+
+        getGender() {
+            return this.gender;
+        }
+
+        setWeight(weight) {
+            this.weight = weight;
+        }
+
+        getWeight() {
+            return this.weight;
+        }
+
+        isMale() {
+            if (this.gender) {
+                return 'Nam';
+            } else {
+                return 'Nữ';
+            }
+        }
+
+        checkApple(apple) {
+            if (apple.isEmpty()) {
+                return 'táo còn ' + apple.getWeightA();
+            } else
+                return 'Táo hết';
+        }
+
+        say(String) {
+            return this.name + ':' + String;
+        }
+
+        eat(Apple) {
+            return Apple.decreaseWeightA();
+        }
+    }
+
+    //--------------------------------------------------------------------------------
+
+
+    let apple = new Apple(10);
+    let adam = new Human("Adam" , true , "75kg");
+    let eva = new Human("Eva" , false , "45kg");
+
+    document.write("<h3>Đây là câu chuyện Adam và Eva </h3> <br>");
+    document.write(
+        "Có 1 " + adam.isMale() + " và 1 " + eva.isMale()
+        + " tên là: " + adam.getName() + " , " + eva.getName()
+        + " <br> Adam có cân nặng : " + adam.getWeight() + "<br>" + "Eva có cân nặng: " + eva.getWeight()
+        + "<br>"
+    );
+    document.write(
+        "Hiện có " + apple.getWeightA() + " quả táo <br><br>"
+        + "<b>Lời thoại như sau </b>: <br>" + adam.say(" Chào, Eva" + "<br>" )  + eva.say(" Chào, Adam <br>")
+        + adam.say(" Hôm nay, anh có " + apple.getWeightA() + " trái táo , thì anh tính để dành cho em ăn , Eva à ." + "<br>")
+        + eva.say(" Em cảm ơn anh rất nhiều Adam , em sẽ ăn dần nó mỗi ngày" + "<br>")
+    );
+    for (var i = 10 ; i >= 1 ; i--) {
+        document.write( "Eva đã ăn quả thứ "+ eva.eat(apple)  +  " trong ngày thứ " + i  + "<br>");}
+    document.write(
+        adam.say(" Em ăn hết táo luôn á <br>") + eva.say(" Dạ anh ! ")
+        + eva.checkApple(apple) + " rồi.<br><br>" + "<b>Từ đó cân nặng Eva đã thay đổi</b>  <br>"
+    );
+    eva.setWeight("60kg");
+    document.write( "Từ 45kg -> " + eva.getWeight() + "<br>");
+    document.write("Cô ấy đã cập nhật tình trạng hiện tại của mình : " + eva.getName() + " / " + eva.isMale() + " / " + eva.getWeight() )
+
+    alert("Câu chuyện bắt đầu");
+
+
+</script>
+</html>
